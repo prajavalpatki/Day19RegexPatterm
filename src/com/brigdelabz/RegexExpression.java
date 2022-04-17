@@ -36,7 +36,7 @@ public class RegexExpression {
     }
 
     public boolean password(String password) {
-        String pattern  = "^[a-zA-Z0-9]{8,}$";
+        String pattern  = "^[A-Z]{1}[A-Za-z0-9]{7,}$";
         if (password.matches(pattern)) {
             return true;
         }
